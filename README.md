@@ -10,3 +10,15 @@
 于是就有个这个脚本，一个DNS服务端，当域名查询来的时候，首先判断hosts里有没有，如果有返回解析为hosts里的IP，
 如果没有，去公网dns里查询并返回相应记录。
 
+启动服务
+
+```
+$ sudo python hostsDNS.py
+```
+
+hosts 文件来自github关注量最高的[https://github.com/racaljk/hosts](https://github.com/racaljk/hosts)
+
+```
+$ curl -O https://raw.githubusercontent.com/racaljk/hosts/master/hosts
+```
+
